@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -18,7 +18,7 @@
 	<script src="./js/blocs.min.js"></script>
 	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>
-    <title>page2</title>
+    <title>Contact</title>
 
     
 <!-- Analytics -->
@@ -62,10 +62,10 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text tc-white">
+				<h1 class="text-center hero-bloc-text">
 					Parlons web design !
 				</h1>
-				<p class="text-center mg-lg tc-white tight-width-whitespace">
+				<p class="text-center mg-lg tight-width-whitespace">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 				</p>
@@ -77,42 +77,32 @@
 
 <!-- bloc-7 -->
 <div class="bloc bgc-white l-bloc" id="bloc-7">
-	<div class="container bloc-lg">
+	<div class="container container-form">
 		<div class="row">
 			<div class="col-sm-6">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
+						<label for="lastname">Nom</label>
+						<input type="text" class="form-control lastname" id="lastname" placeholder="Bonnet">
 					</div>
 					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
+						<label for="firstname">Prénom</label>
+						<input type="text" class="form-control firstname" id="firstname" placeholder="Jean">
 					</div>
 					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<label for="email">addresse email</label>
+						<input type="email" class="form-control" id="email" placeholder="name@example.com">
 					</div>
 					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-						Envoyer
-					</button>
+						<label for="question">Comment nous avez-vous connu ?</label>
+						<input type="text" class="form-control question" id="question" >
+					</div>
+					<div class="form-group">
+						<label for="summaryProject">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
+						<textarea class="form-control summaryProject" id="summaryProject" rows="3"></textarea>
+					</div>
+					<button type="submit" class="btn bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine">Envoyer</button>
 				</form>
-			</div>
-			<div class="col-sm-6">
-				<p>
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-				</p>
 			</div>
 		</div>
 	</div>
@@ -125,39 +115,56 @@
 
 
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-	<div class="container bloc-sm">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+	<div class="bloc-sm">
 		<div class="row">
-			<div class="col-sm-12">
-				<p class="text-center white">
-					La chouette agence - Agence web basée à Lyon.<br>
-				</p>
-				<div class="row row-no-gutters social">
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+			<div class="col-sm-12 footer-container-info">
+				<div class="social-media col-sm-6">
+					<p class="text-center white">
+						La chouette agence - Agence web basée à Lyon.<br>
+					</p>
+					<div class="row row-no-gutters social">
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							</div>
 						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							</div>
 						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							</div>
 						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							</div>
 						</div>
+						<div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
 					</div>
+				</div>
+				<div class="col-sm-4">
+						Partenaires
+						<ul>
+							<li><a href="voiture.com">voiture.com</a></li>
+							<li><a href="pizza.com">pizza.com</a></li>
+							<li><a href="matoiture.com">matoiture.com</a></li>
+							<li><a href="immobilierseo.com">immobilierseo.com</a></li>
+						</ul>		
+				</div>
+				<div class="col-sm-4">
+					<p>
+						contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+					</p>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
 </div>
