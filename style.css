@@ -513,16 +513,6 @@ button {
     margin: auto;
     padding: 50px 0;
 }
-#form_1 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-.form-group {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0;
-}
 
 .scrollToTop {
     width: 40px;
@@ -724,8 +714,10 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: grid;
+    grid-template-columns: 0% 25% 25% 25% 25%;
+    margin-bottom: 20px;
 }
-
 
 .med-width-whitespace {
     max-width: 800px;
@@ -750,6 +742,11 @@ p {
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
+}
+.creation {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
 }
 
 .avatar {
@@ -831,7 +828,8 @@ p {
 
 .footer-container-info {
     display: flex;
-    justify-content: space-between;
+    flex-flow: wrap;
+    justify-content: center;
 }
 
 @media (max-width: 1024px) {
@@ -896,6 +894,13 @@ p {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+    .partenaires {
+        margin: 20px 0;
+    }
+    .contact {
+        margin: 20px 0;
+    }
+    
 }
 
 @media (max-width: 767px) {
