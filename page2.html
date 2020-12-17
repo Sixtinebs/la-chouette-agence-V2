@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.min.css">
 	
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="style.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" async>
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" async>
+	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css" async >
 	
     
     <title>Contactez-nous !</title>
@@ -74,18 +74,18 @@
 	<div class="container container-form">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form  role="group" aria-labelledby="coordonnees" id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!" >
 					<div class="form-group">
 						<label for="lastname">Nom</label>
-						<input type="text" class="form-control lastname" id="lastname" placeholder="Bonnet">
+						<input type="text" class="form-control lastname" id="lastname" placeholder="Bonnet" required>
 					</div>
 					<div class="form-group">
 						<label for="firstname">Prénom</label>
-						<input type="text" class="form-control firstname" id="firstname" placeholder="Jean">
+						<input type="text" class="form-control firstname" id="firstname" placeholder="Jean" required>
 					</div>
 					<div class="form-group">
 						<label for="email">addresse email</label>
-						<input type="email" class="form-control" id="email" placeholder="name@example.com">
+						<input type="email" class="form-control" id="email" placeholder="name@example.com" required>
 					</div>
 					<div class="form-group">
 						<label for="question">Comment nous avez-vous connu ?</label>
@@ -93,7 +93,7 @@
 					</div>
 					<div class="form-group">
 						<label for="summaryProject">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
-						<textarea class="form-control summaryProject" id="summaryProject" rows="3"></textarea>
+						<textarea class="form-control summaryProject" id="summaryProject" rows="3" required></textarea>
 					</div>
 					<button type="submit" class="btn bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine">Envoyer</button>
 				</form>
