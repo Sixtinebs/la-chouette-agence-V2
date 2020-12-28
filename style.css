@@ -704,11 +704,13 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
+}
+.cta-hero a {
+    color :black;
 }
 
 .social {
@@ -778,15 +780,19 @@ p {
 .tc-white {
     color: #F3976C!important;
 }
+.titreContact {
+    color: #E6E6E6;
+}
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #1F1F1F;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #1F1F1F;
+
 }
 
 .ltc-white {
@@ -831,6 +837,21 @@ p {
     flex-flow: wrap;
     justify-content: center;
 }
+footer p {
+    color: #1F1F1F;
+}
+.partenaires {
+    color: black;
+}
+.partenaires a {
+    color:#1F1F1F;
+}
+.containerProjet p {
+    color: #1F1F1F;
+}
+.containerProjet h1 {
+    color: #1F1F1F;
+}
 
 @media (max-width: 1024px) {
     .bloc {
@@ -855,13 +876,13 @@ p {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
